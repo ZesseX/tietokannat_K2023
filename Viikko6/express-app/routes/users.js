@@ -18,12 +18,12 @@ router.get('/toka', function(request,response){
 });
 
 router.get('/kolmas/:nimi', function(request,response){
-  response.send("Olen" + request.params.nimi);
+  response.send("Olen " + request.params.nimi);
   console.log(request.params.nimi);
 });
 
 router.get('/neljas/:enimi/:snimi', function(request, response){
-  response.send("Olen" + request.params.enimi + " " + request.params.snimi);
+  response.send("Olen " + request.params.enimi + " " + request.params.snimi);
 });
 
 router.post('/', function(request, response){
